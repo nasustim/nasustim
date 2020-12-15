@@ -1,10 +1,11 @@
 ## Bio
 
 - Software Engineer at Mobile Game Developer
-- M.A. (Media Creation / 2020)
+- Live and based in Tokyo
 
 ## Skill
 
 - JavaScript (Web Front-End)
 - Prototyping and Validation
+  - Create waste things
 - and more -> https://nasustim.com/whoami
