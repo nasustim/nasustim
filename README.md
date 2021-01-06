@@ -8,4 +8,4 @@
 - JavaScript (Web Front-End)
 - Prototyping and Validation
   - Create waste things
-- and more -> https://nasustim.com/whoami
+- and more -> https://nasustim.com
