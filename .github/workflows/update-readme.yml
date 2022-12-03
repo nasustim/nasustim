@@ -1,0 +1,14 @@
+name: Update README.md
+on:
+  pull_request:
+
+jobs:
+  update_readmemd:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3 # 仮
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v3
+        with:
+          go-version-file: go.mod
+      - run: go run cmd/cli/main.go
