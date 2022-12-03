@@ -1,0 +1,22 @@
+name: Test Go
+on:
+  pull_request:
+    paths:
+      - .github/workflows/test-go.yml
+      - cmd/**
+      - tmpl/**
+      - go.mod
+  push:
+    branches:
+      - main
+
+jobs:
+  update_readmemd:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3 # 仮
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v3
+        with:
+          go-version-file: go.mod
+      - run: go test -v ./...
