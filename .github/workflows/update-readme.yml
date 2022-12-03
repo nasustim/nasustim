@@ -14,6 +14,12 @@ jobs:
           go-version-file: go.mod
       - run: go run cmd/cli/main.go
       - run: |
+          # diffがない場合はskip
+          has_diff=$(git status | grep 'Changes not staged for commit')
+          if [ -z "${has_diff}" ]; then
+            exit 0
+          fi
+
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
