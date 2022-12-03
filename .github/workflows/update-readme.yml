@@ -19,6 +19,7 @@ jobs:
             exit 0
           fi
 
+          git config user.name github-actions
           git add .
           git commit -m "[auto commit] update README.md"
           git push origin main
