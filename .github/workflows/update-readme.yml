@@ -15,7 +15,7 @@ jobs:
       - run: go run cmd/cli/main.go
       - run: |
           # diffがない場合はskip
-          has_diff=$(git status | grep 'Changes not staged for commit')
+          has_diff=$(git status | grep 'Changes not staged for commit' || true)
           if [ -z "${has_diff}" ]; then
             exit 0
           fi
