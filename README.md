@@ -1,9 +1,7 @@
-## :ninja: About me
+## nasustim
 
-Hey:wave:
+- Software engineer based in Tokyo
 
-I am Mitsuhiro HIBINO. I usually use handle name nasustim at Internet.
+### links
 
-I was born in Gifu, Central Japan. Currently, I live in Meguro-ku, Tokyo.
-I work in [MIXI, inc](https://github.com/mixigroup) as a Software Engineer specifies Server Application and Infrastructure. Especially I use Go, Perl, TypeScript and some AWS services.
-
+- [nasustim.com](https://nasustim.com)
