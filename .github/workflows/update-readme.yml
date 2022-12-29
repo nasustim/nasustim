@@ -13,8 +13,10 @@ jobs:
       - uses: actions/setup-go@v3
         with:
           go-version-file: go.mod
-      - run: go run cmd/cli/main.go
-      - run: |
+      - name: Generate README.md
+        run: go run cmd/cli/main.go
+      - name: Push to main
+        run: |
           # diffがない場合はskip
           has_diff=$(git status | grep 'Changes not staged for commit' || true)
           if [ -z "${has_diff}" ]; then
