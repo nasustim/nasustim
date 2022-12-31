@@ -3,19 +3,35 @@ on:
   schedule:
     - cron: "0 15 * * *" # JST 0AM
   workflow_dispatch:
+  pull_request:
+    paths:
+      - .github/workflows/update-readme.yml
 
 jobs:
   update_readmemd:
     runs-on: ubuntu-latest
     timeout-minutes: 1
+    env:
+      GITHUB_TOKEN: ${{ secrets.TOKEN }}
     steps:
       - uses: actions/checkout@v3
+      - name: Make summary
+        run: |
+          curl -OL https://github.com/nasustim/github-all-summary/releases/download/v0.0.1/github_all_summary_linux_amd64
+          chmod 500 ./github_all_summary_linux_amd64
+          ./github_all_summary_linux_amd64 --user_name nasustim --access_token $GITHUB_TOKEN --out ./github-stat.svg
+
+          if [ ! -e ./images ]; then
+            mkdir images
+          fi
+          mv ./github-stat.svg ./images/
       - uses: actions/setup-go@v3
         with:
           go-version-file: go.mod
       - name: Generate README.md
         run: go run cmd/cli/main.go
       - name: Push to main
+        if: github.event_name != 'pull_request'
         run: |
           # diffがない場合はskip
           has_diff=$(git status | grep 'Changes not staged for commit' || true)

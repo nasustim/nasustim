@@ -8,7 +8,7 @@ I work in [MIXI, inc](https://github.com/mixigroup) as a Software Engineer speci
 
 ## Stats
 
-![nasustim github stats](https://github-readme-stats.vercel.app/api?username=nasustim)
+<img src="./images/github-stat.svg">
 
 ## :link: More...
 
