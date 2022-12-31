@@ -15,7 +15,7 @@ jobs:
       - name: Make summary
         run: |
           curl -OL https://github.com/nasustim/github-all-summary/releases/download/v0.0.1/github_all_summary_linux_amd64
-          ./github_all_summary_linux_amd64 --user_name nasustim --access_token $GITHUB_TOKEN
+          ./github_all_summary_linux_amd64 --user_name nasustim --access_token $GITHUB_TOKEN --out ./image/github-stat.svg
       - uses: actions/setup-go@v3
         with:
           go-version-file: go.mod
