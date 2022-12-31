@@ -6,6 +6,10 @@ I am Mitsuhiro HIBINO. I usually use handle name `@nasustim` at Internet:globe_w
 I was born in Gifu[^1], Japan:jp:. Currently, I live in Meguro-ku, Tokyo:tokyo_tower:.  
 I work in [MIXI, inc](https://github.com/mixigroup) as a Software Engineer specifies Server Application and Infrastructure. Especially I use Go, Perl, TypeScript and some AWS services.
 
+## Stats
+
+![nasustim github stats](https://github-readme-stats.vercel.app/api?username=nasustim)
+
 ## :link: More...
 
 [My Portfolio Site](https://nasustim.com) / [Keybase](https://keybase.io/nasustim)
