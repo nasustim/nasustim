@@ -8,8 +8,14 @@ jobs:
   update_readmemd:
     runs-on: ubuntu-latest
     timeout-minutes: 1
+    env:
+      GITHUB_TOKEN: secrets.GITHUB_TOKEN
     steps:
       - uses: actions/checkout@v3
+      - name: Make summary
+        run: |
+          curl -OL https://github.com/nasustim/github-all-summary/releases/download/v0.0.1/github_all_summary_linux_amd64
+          ./github_all_summary_linux_amd64 --user_name nasustim --access_token $GITHUB_TOKEN
       - uses: actions/setup-go@v3
         with:
           go-version-file: go.mod
