@@ -8,7 +8,7 @@ I work in [MIXI, inc](https://github.com/mixigroup) as a Software Engineer speci
 
 ## Stats
 
-<img style="width=56%;" src="./images/github-stat.svg">
+<img width="350" src="./images/github-stat.svg">
 
 ## :link: More...
 
