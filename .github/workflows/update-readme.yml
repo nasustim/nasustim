@@ -25,6 +25,8 @@ jobs:
             mkdir images
           fi
           mv ./github-stat.svg ./images/
+
+          rm -f ./github_all_summary_linux_amd64
       - uses: actions/setup-go@v3
         with:
           go-version-file: go.mod
