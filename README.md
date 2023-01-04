@@ -14,4 +14,4 @@ I work in [MIXI, inc](https://github.com/mixigroup) as a Software Engineer speci
 
 [My Portfolio Site](https://nasustim.com) / [Keybase](https://keybase.io/nasustim)
 
-[^1]: [Gifu](https://www.pref.gifu.lg.jp/site/english/209.html) Prefecture is medium scale state, places Central Japan. It is enjoyable place famous for hot springs:hotsprings: and mountains:mountain:, and could you come on if get a chance. 
+[^1]: [Gifu](https://www.pref.gifu.lg.jp/site/english/209.html) Prefecture is medium scale state, places Central Japan. It is enjoyable place famous for hot springs:hotsprings: and mountains:mountain:, and could you come on if get a chance.
