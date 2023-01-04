@@ -39,7 +39,7 @@ func run(tmplPath string, output string) int {
 }
 
 func main() {
-	tmplPath := flag.String("tmpl_path", "tmpl/README.gomd", "path of README.md template file")
+	tmplPath := flag.String("tmpl_path", "tmpl/README.go.md", "path of README.md template file")
 	output := flag.String("output", "README.md", "output file path")
 	flag.Parse()
 

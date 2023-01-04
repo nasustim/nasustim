@@ -8,7 +8,7 @@ import (
 
 func Test_Run(t *testing.T) {
 	t.Run("exit successfully", func(t *testing.T) {
-		actual := cli.Run("../../tmpl/README.gomd", "../../README.md")
+		actual := cli.Run("../../tmpl/README.go.md", "../../README.md")
 		if actual != cli.EXIT_SUCCESS {
 			t.Error("unexpected result")
 		}
