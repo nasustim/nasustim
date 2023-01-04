@@ -15,21 +15,18 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-go@v3
+        with:
+          go-version-file: go.mod
+      - run: go install github.com/nasustim/ghsummarygen@latest
       - name: Make summary
         run: |
-          curl -OL https://github.com/nasustim/github-all-summary/releases/download/v0.0.1/github_all_summary_linux_amd64
-          chmod 500 ./github_all_summary_linux_amd64
-          ./github_all_summary_linux_amd64 --user_name nasustim --access_token $GITHUB_TOKEN --out ./github-stat.svg
+          ghsummarygen --user_name nasustim --access_token $GITHUB_TOKEN --out ./github-stat.svg
 
           if [ ! -e ./images ]; then
             mkdir images
           fi
           mv ./github-stat.svg ./images/
-
-          rm -f ./github_all_summary_linux_amd64
-      - uses: actions/setup-go@v3
-        with:
-          go-version-file: go.mod
       - name: Generate README.md
         run: go run cmd/cli/main.go
       - name: Push to main
