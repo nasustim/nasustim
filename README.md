@@ -1,18 +1,17 @@
-## :ninja: About me
+## :ninja: About Me
 
 Hey:wave:  
-I am Mitsuhiro HIBINO. I call myself `@nasustim` on Internet:globe_with_meridians:.
+I am Mitsuhiro HIBINO. In internet, I call myself `@nasustim`.
 
-I was born in Gifu[^1], Japan:jp:. Currently, I live in Meguro-ku, Tokyo:tokyo_tower:.  
-I work in [MIXI, inc](https://github.com/mixigroup) as a Software Engineer specifies Server Application and Infrastructure. Especially I use Go, Perl, TypeScript and some AWS services.
+I was born in Gifu, Japan:jp:. Currently, I live in Meguro-ku, Tokyo:tokyo_tower:.  
+I work at [MIXI, inc](https://github.com/mixigroup) as a Software Engineer specialize in server applicationa and infrastructure. Especially I use Go, Perl, TypeScript and AWS resources.
 
 ## Stats
 
 <img width="350" src="./images/github-stat.svg">
 
-## :link: More...
+## :link: More Informations
 
-[:man_artist: My Portfolio](https://nasustim.com)  
-[:key: Keybase](https://keybase.io/nasustim)
+- [:man_artist: my portfolio](https://nasustim.com)  
+- [:key: keybase](https://keybase.io/nasustim)
 
-[^1]: [Gifu](https://www.pref.gifu.lg.jp/site/english/209.html) Prefecture places Central Japan, and It is famous for hotsprings:hotsprings: and mountains:mountain:.
