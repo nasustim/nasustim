@@ -4,7 +4,7 @@ Hey:wave:
 I am Mitsuhiro HIBINO. In internet, I call myself `@nasustim`.
 
 I was born in Gifu, Japan:jp:. Currently, I live in Meguro-ku, Tokyo:tokyo_tower:.  
-I work at [MIXI, inc](https://github.com/mixigroup) as a Software Engineer specialize in server applicationa and infrastructure. Especially I use Go, Perl, TypeScript and AWS resources.
+I work at [MIXI, inc](https://github.com/mixigroup) as a Software Engineer specialize in server application and infrastructure. Especially I use Go, Perl, TypeScript and AWS resources.
 
 ## Stats
 
