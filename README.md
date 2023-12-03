@@ -1,10 +1,10 @@
 ## :ninja: About Me
 
-Hey:wave:  
-I am Mitsuhiro HIBINO. In internet, I call myself `@nasustim`.
+Hi:wave:  
+I am Mitsuhiro HIBINO. also called `@nasustim` on the internet.
 
-I was born in Gifu, Japan:jp:. Currently, I live in Kanagawa-ken, a suburb of Tokyo:tokyo_tower:.  
-I work at [MIXI, inc](https://github.com/mixigroup) as a Software Engineer specialize in server application and infrastructure. Especially I use Go, Perl, TypeScript and AWS resources.
+I was born in Gifu and based in Kanagawa.  
+Currntly, I work at [MIXI, inc](https://github.com/mixigroup) as a Software Engineer, mainly responsible web-frontend and flutter app.
 
 ## Stats
 
@@ -12,6 +12,5 @@ I work at [MIXI, inc](https://github.com/mixigroup) as a Software Engineer speci
 
 ## :link: More Informations
 
-- [:man_artist: my portfolio](https://nasustim.com)  
-- [:key: keybase](https://keybase.io/nasustim)
-
+- [:man_artist: My website](https://nasustim.com)
+- [:key: Keybase](https://keybase.io/nasustim)
