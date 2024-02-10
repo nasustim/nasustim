@@ -1,16 +1,13 @@
-## :ninja: About Me
+## About Me
 
-Hi:wave:  
-I am Mitsuhiro HIBINO. also called `@nasustim` on the internet.
+A software engineer and weekend individual creator, born and raised in Japan.  
+Currently, I'm belonging to [MIXI inc](https://mixi.co.jp/) as a staff. however I welcome to request works as individual developer or creator.
 
-I was born in Gifu and based in Kanagawa.  
-Currntly, I work at [MIXI, inc](https://github.com/mixigroup) as a Software Engineer, mainly responsible web-frontend and flutter app.
-
-## Stats
+## Stats of Contribution
 
 <img width="350" src="./images/github-stat.svg">
 
-## :link: More Informations
+## More Info
 
-- [:man_artist: My website](https://nasustim.com)
+- [:information_source: My website](https://nasustim.com)
 - [:key: Keybase](https://keybase.io/nasustim)
