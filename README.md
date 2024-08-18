@@ -1,7 +1,7 @@
 ## About Me
 
-A software engineer and weekend individual creator, born and raised in Japan.  
-Currently, I'm belonging to [MIXI inc](https://mixi.co.jp/) as a staff. however I welcome to request works as individual developer or creator.
+A software engineer and weekend creator, born and raised in Japan.  
+Currently, I work at [MIXI inc](https://mixi.co.jp/), mainly specialize development in web frontend and flutter.
 
 ## Stats of Contribution
 
