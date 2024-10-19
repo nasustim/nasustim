@@ -1,9 +1,9 @@
 ## About Me
 
 A software engineer and weekend creator, born and raised in Japan.  
-Currently, I work at [MIXI inc](https://mixi.co.jp/), mainly specialize development in web frontend and flutter.
+Recent interests are mainly development with TypeScript and Flutter.
 
-## Stats of Contribution
+## My activity stats on GitHub
 
 <img width="350" src="./images/github-stat.svg">
 
