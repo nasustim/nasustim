@@ -10,16 +10,28 @@ on:
 jobs:
   update_readmemd:
     runs-on: ubuntu-latest
-    timeout-minutes: 1
-    env:
-      GITHUB_TOKEN: ${{ secrets.TOKEN }}
+    timeout-minutes: 5
     steps:
+      - name: Generate GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v3.2.0
+        with:
+          client-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
       - uses: actions/checkout@v7.0.1
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+
       - uses: actions/setup-go@v7.0.0
         with:
           go-version-file: go.mod
+
       - run: go install github.com/nasustim/ghsummarygen@latest
+
       - name: Make summary
+        env:
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           ghsummarygen --user_name nasustim --access_token $GITHUB_TOKEN --out ./github-stat.svg
 
@@ -27,8 +39,10 @@ jobs:
             mkdir images
           fi
           mv ./github-stat.svg ./images/
+
       - name: Generate README.md
         run: go run cmd/cli/main.go
+
       - name: Push to main
         if: github.event_name != 'pull_request'
         run: |
@@ -38,8 +52,8 @@ jobs:
             exit 0
           fi
 
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name "nasustim-s-magical-automation[bot]"
+          git config user.email "3906390+nasustim-s-magical-automation[bot]@users.noreply.github.com"
           git add .
           git commit -m "[auto commit] update README.md"
           git push origin main
